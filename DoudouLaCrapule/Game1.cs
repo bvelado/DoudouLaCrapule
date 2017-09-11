@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using DoudouLaCrapule.Sources;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -11,7 +12,10 @@ namespace DoudouLaCrapule
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        
+
+        Sprite turtle;
+        Sprite[] map; 
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -27,6 +31,8 @@ namespace DoudouLaCrapule
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            turtle = new Sprite(Content.Load<Texture2D>("turtle"), new Point(32, 32), Color.White);
 
             base.Initialize();
         }
@@ -73,9 +79,14 @@ namespace DoudouLaCrapule
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
+
+            spriteBatch.Begin();
+            turtle.Draw(spriteBatch);
+            
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

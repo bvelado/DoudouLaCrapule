@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:ns="Microsoft.Xna.Framework">
+  <Asset Type="DataLibrary.Map">
+    <MapWidth>6</MapWidth>
+    <MapHeight>6</MapHeight>
+    <TileWidth>32</TileWidth>
+    <TileHeight>32</TileHeight>
+    <TileSetPath>tiles</TileSetPath>
+    <Tiles>
+      
+    </Tiles>
+  </Asset>
+</XnaContent>
