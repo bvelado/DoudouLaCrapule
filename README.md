@@ -1,0 +1,2 @@
+# DoudouLaCrapule
+MonoGame training project
