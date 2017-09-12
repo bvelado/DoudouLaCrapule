@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace DataLibrary
 {
-    class Map
+    public class Map
     {
         public int MapWidth;
         public int MapHeight;
         public int TileWidth;
         public int TileHeight;
         public string TileSetPath;
-        public Tile[] Tiles;
+
+        [XmlArray("Tiles"), XmlArrayItem(typeof(Tile), ElementName = "Tile")]
+        public List<Tile> Tiles;
     }
 }

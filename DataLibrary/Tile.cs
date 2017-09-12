@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Xml.Serialization;
 
 namespace DataLibrary
 {
-    class Tile
+    [XmlRoot("Map")]
+    public class Tile
     {
         public int TileIndex;
+        public int PositionX;
+        public int PositionY;
     }
 }

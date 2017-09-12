@@ -45,6 +45,7 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sources\Player\Player.cs" />
     <Compile Include="Sources\Sprite.cs" />
   </ItemGroup>
   <ItemGroup>

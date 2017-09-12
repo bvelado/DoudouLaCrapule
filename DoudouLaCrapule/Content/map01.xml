@@ -1,13 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:ns="Microsoft.Xna.Framework">
   <Asset Type="DataLibrary.Map">
-    <MapWidth>6</MapWidth>
-    <MapHeight>6</MapHeight>
+    <MapWidth>4</MapWidth>
+    <MapHeight>4</MapHeight>
     <TileWidth>32</TileWidth>
     <TileHeight>32</TileHeight>
     <TileSetPath>tiles</TileSetPath>
     <Tiles>
-      
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>2</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>5</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>8</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>6</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>4</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
+      <Tile>
+        <TileIndex>0</TileIndex>
+      </Tile>
     </Tiles>
   </Asset>
 </XnaContent>
