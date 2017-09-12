@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:DataLibrary="DataLibrary">
+  <Asset Type="DataLibrary:Animations">
+    <AnimationsTexturePath Null="true" />
+    <FrameWidth>0</FrameWidth>
+    <FrameHeight>0</FrameHeight>
+    <TextureColumns>0</TextureColumns>
+    <TextureRows>0</TextureRows>
+    <FramesPerSecond>0</FramesPerSecond>
+    <AnimationsList>
+      <Item>
+        <Name Null="true" />
+        <FramePositions>0 0 0 0</FramePositions>
+      </Item>
+    </AnimationsList>
+  </Asset>
+</XnaContent>

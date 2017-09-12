@@ -10,24 +10,54 @@
     <TilesetRows>24</TilesetRows>
     <Tiles>
       <Item Type="DataLibrary.Tile">
-        <TileIndex>12</TileIndex>
+        <TileIndex>76</TileIndex>
         <PositionX>0</PositionX>
         <PositionY>0</PositionY>
       </Item>
       <Item Type="DataLibrary.Tile">
-        <TileIndex>13</TileIndex>
+        <TileIndex>77</TileIndex>
         <PositionX>1</PositionX>
         <PositionY>0</PositionY>
       </Item>
       <Item Type="DataLibrary.Tile">
-        <TileIndex>44</TileIndex>
-        <PositionX>0</PositionX>
-        <PositionY>1</PositionY>
+        <TileIndex>78</TileIndex>
+        <PositionX>2</PositionX>
+        <PositionY>0</PositionY>
       </Item>
       <Item Type="DataLibrary.Tile">
-        <TileIndex>45</TileIndex>
-        <PositionX>1</PositionX>
-        <PositionY>1</PositionY>
+        <TileIndex>77</TileIndex>
+        <PositionX>3</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>78</TileIndex>
+        <PositionX>4</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>77</TileIndex>
+        <PositionX>5</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>78</TileIndex>
+        <PositionX>6</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>77</TileIndex>
+        <PositionX>7</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>78</TileIndex>
+        <PositionX>8</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>79</TileIndex>
+        <PositionX>9</PositionX>
+        <PositionY>0</PositionY>
       </Item>
     </Tiles>
   </Asset>

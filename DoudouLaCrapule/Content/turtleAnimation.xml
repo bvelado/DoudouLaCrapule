@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XnaContent xmlns:ns="Microsoft.Xna.Framework">
-  <Asset Type="DataLibrary.Animations">
+<XnaContent xmlns:DataLibrary="DataLibrary">
+  <Asset Type="DataLibrary:Animations">
     <AnimationsTexturePath>turtle</AnimationsTexturePath>
     <FrameWidth>16</FrameWidth>
     <FrameHeight>16</FrameHeight>
@@ -8,11 +8,37 @@
     <TextureRows>4</TextureRows>
     <FramesPerSecond>4</FramesPerSecond>
     <AnimationsList>
-      <Item Type="DataLibrary.Animation">
-        <Name>WalkUp</Name>
-        <FrameIndexes>
-          <int>0</int>
-        </FrameIndexes>
+      <Item>
+        <Name>Idle_Up</Name>
+        <FramePositions>0 0</FramePositions>
+      </Item>
+      <Item>
+        <Name>Idle_Left</Name>
+        <FramePositions>0 16</FramePositions>
+      </Item>
+      <Item>
+        <Name>Idle_Right</Name>
+        <FramePositions>0 32</FramePositions>
+      </Item>
+      <Item>
+        <Name>Idle_Down</Name>
+        <FramePositions>0 48</FramePositions>
+      </Item>
+      <Item>
+        <Name>Walk_Up</Name>
+        <FramePositions>0 0 16 0 32 0 48 0</FramePositions>
+      </Item>
+      <Item>
+        <Name>Walk_Left</Name>
+        <FramePositions>0 16 16 16 32 16 48 16</FramePositions>
+      </Item>
+      <Item>
+        <Name>Walk_Right</Name>
+        <FramePositions>0 32 16 32 32 32 48 32</FramePositions>
+      </Item>
+      <Item>
+        <Name>Walk_Down</Name>
+        <FramePositions>0 48 16 48 32 48 48 48</FramePositions>
       </Item>
     </AnimationsList>
   </Asset>

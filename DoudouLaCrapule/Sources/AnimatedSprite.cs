@@ -7,7 +7,7 @@ namespace DoudouLaCrapule.Sources
 {
     class AnimatedSprite : Sprite
     {
-        private Dictionary<string, Rectangle[]> animationFramesByName;
+        private Dictionary<string, Point[]> animationFramesByName;
         private Animations animations;
         /// <summary>
         /// Duration in miliseconds between 2 frames
@@ -16,16 +16,20 @@ namespace DoudouLaCrapule.Sources
 
         private int currentIndex;
         private float currentTimer;
-        private Rectangle[] currentFramesIndexes;
+        private Point[] currentFramesIndexes;
+
+        private Rectangle srcRect;
 
         public AnimatedSprite(Texture2D texture, Point position, Point size, Animations animations, Color tint) : base (texture, position, size, tint)
         {
             this.animations = animations;
 
-            animationFramesByName = new Dictionary<string, Rectangle[]>();
+            srcRect.Size = new Point(animations.FrameWidth, animations.FrameHeight);
+
+            animationFramesByName = new Dictionary<string, Point[]>();
             foreach (var animation in animations.AnimationsList)
             {
-                animationFramesByName.Add(animation.Name, animation.Frames);
+                animationFramesByName.Add(animation.Name, animation.FramePositions);
             }
 
             timeBetweenFrames = 1000f / animations.FramesPerSecond;
@@ -38,6 +42,7 @@ namespace DoudouLaCrapule.Sources
                 currentIndex = 0;
                 currentTimer = 0f;
                 currentFramesIndexes = animationFramesByName[animationName];
+                srcRect.Location = currentFramesIndexes[0];
             }
         }
 
@@ -51,6 +56,8 @@ namespace DoudouLaCrapule.Sources
                 else
                     currentIndex = 0;
 
+                // Sync the srcRect position with the current frame position
+                srcRect.Location = currentFramesIndexes[currentIndex];
                 currentTimer -= timeBetweenFrames;
             }
 
@@ -59,7 +66,7 @@ namespace DoudouLaCrapule.Sources
 
         public override void Draw(SpriteBatch spriteBatch)
         {
-            //spriteBatch.Draw(texture, destRect, )
+            spriteBatch.Draw(texture, destRect, srcRect, Color.White);
         }
     }
 }

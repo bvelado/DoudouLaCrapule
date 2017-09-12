@@ -6,21 +6,18 @@ namespace DoudouLaCrapule.Sources
     class Sprite
     {
         protected Texture2D texture;
-        protected Point position;
+        public Point Position { get { return destRect.Location; } set { destRect.Location = value; } }
         protected Point size;
         protected Color tint;
 
-        protected Rectangle destRect;
+        //public virtual Point Position { get { return position; } set { position = value; } }
 
-        public void SetPosition(Point newPosition)
-        {
-            position = newPosition;
-        }
+        public Rectangle destRect;
 
         public Sprite(Texture2D texture, Point position, Color tint)
         {
             this.texture = texture;
-            this.position = position;
+            this.Position = position;
             this.size = new Point(texture.Width, texture.Height);
             this.tint = tint;
 
@@ -30,7 +27,7 @@ namespace DoudouLaCrapule.Sources
         public Sprite(Texture2D texture, Point position, Point size, Color tint)
         {
             this.texture = texture;
-            this.position = position;
+            this.Position = position;
             this.size = size;
             this.tint = tint;
 

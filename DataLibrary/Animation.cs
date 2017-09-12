@@ -5,6 +5,6 @@ namespace DataLibrary
     public class Animation
     {
         public string Name;
-        public Rectangle[] Frames;
+        public Point[] FramePositions;
     }
 }
