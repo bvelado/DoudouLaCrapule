@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:ns="Microsoft.Xna.Framework">
+  <Asset Type="DataLibrary.Animations">
+    <AnimationsTexturePath>turtle</AnimationsTexturePath>
+    <FrameWidth>16</FrameWidth>
+    <FrameHeight>16</FrameHeight>
+    <TextureColumns>4</TextureColumns>
+    <TextureRows>4</TextureRows>
+    <FramesPerSecond>4</FramesPerSecond>
+    <AnimationsList>
+      <Item Type="DataLibrary.Animation">
+        <Name>WalkUp</Name>
+        <FrameIndexes>
+          <int>0</int>
+        </FrameIndexes>
+      </Item>
+    </AnimationsList>
+  </Asset>
+</XnaContent>

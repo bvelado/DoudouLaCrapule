@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace DataLibrary
 {
-    class Animations
+    public class Animations
     {
         public string AnimationsTexturePath;
         public int FrameWidth;
         public int FrameHeight;
-        public AnimationData[] AnimationsData;
+        public int TextureColumns;
+        public int TextureRows;
+        public int FramesPerSecond;
+
+        public Animation[] AnimationsList;
     }
 }

@@ -2,7 +2,6 @@
 
 namespace DataLibrary
 {
-    [XmlRoot("Map")]
     public class Tile
     {
         public int TileIndex;

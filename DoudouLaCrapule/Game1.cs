@@ -1,4 +1,6 @@
-﻿using DoudouLaCrapule.Sources;
+﻿using System.Collections.Generic;
+using DataLibrary;
+using DoudouLaCrapule.Sources;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -32,7 +34,26 @@ namespace DoudouLaCrapule
         {
             // TODO: Add your initialization logic here
 
-            turtle = new Sprite(Content.Load<Texture2D>("turtle"), new Point(32, 32), Color.White);
+            turtle = new Sprite(Content.Load<Texture2D>("turtle"), new Point(0, 0), Color.White);
+            Map testMap = Content.Load<Map>("map01");
+
+            Texture2D mapTexture = Content.Load<Texture2D>(testMap.TilesetPath);
+            
+            var tmpMap = new List<Sprite>();
+            foreach(var tile in testMap.Tiles)
+            {
+                tmpMap.Add(
+                    new Sources.Tile(
+                        mapTexture,
+                        new Point(tile.PositionX * testMap.TileWidth, tile.PositionY * testMap.TileHeight),
+                        new Point(testMap.TileWidth, testMap.TileHeight),
+                        new Rectangle(
+                            new Point((tile.TileIndex % testMap.TilesetColumns) * testMap.TileWidth, (tile.TileIndex / testMap.TilesetColumns) * testMap.TileHeight),
+                            new Point(testMap.TileWidth, testMap.TileHeight)),
+                        Color.White)
+                );
+            }
+            map = tmpMap.ToArray();
 
             base.Initialize();
         }
@@ -84,8 +105,11 @@ namespace DoudouLaCrapule
             // TODO: Add your drawing code here
 
             spriteBatch.Begin();
+            foreach(var tile in map)
+            {
+                tile.Draw(spriteBatch);
+            }
             turtle.Draw(spriteBatch);
-            
             spriteBatch.End();
 
             base.Draw(gameTime);

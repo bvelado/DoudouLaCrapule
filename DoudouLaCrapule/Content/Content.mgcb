@@ -43,3 +43,8 @@
 /processor:PassThroughProcessor
 /build:map01.xml
 
+#begin turtleAnimation.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:turtleAnimation.xml
+

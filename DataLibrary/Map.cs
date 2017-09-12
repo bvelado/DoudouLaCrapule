@@ -5,13 +5,14 @@ namespace DataLibrary
 {
     public class Map
     {
-        public int MapWidth;
-        public int MapHeight;
+        public int MapColumns;
+        public int MapRows;
         public int TileWidth;
         public int TileHeight;
-        public string TileSetPath;
-
-        [XmlArray("Tiles"), XmlArrayItem(typeof(Tile), ElementName = "Tile")]
-        public List<Tile> Tiles;
+        public string TilesetPath;
+        public int TilesetColumns;
+        public int TilesetRows;
+        
+        public Tile[] Tiles;
     }
 }

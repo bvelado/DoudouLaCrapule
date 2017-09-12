@@ -10,7 +10,7 @@ namespace DoudouLaCrapule.Sources
         protected Point size;
         protected Color tint;
 
-        private Rectangle rect;
+        protected Rectangle destRect;
 
         public void SetPosition(Point newPosition)
         {
@@ -24,7 +24,7 @@ namespace DoudouLaCrapule.Sources
             this.size = new Point(texture.Width, texture.Height);
             this.tint = tint;
 
-            this.rect = new Rectangle(position, size);
+            this.destRect = new Rectangle(position, size);
         }
 
         public Sprite(Texture2D texture, Point position, Point size, Color tint)
@@ -34,12 +34,12 @@ namespace DoudouLaCrapule.Sources
             this.size = size;
             this.tint = tint;
 
-            this.rect = new Rectangle(position, size);
+            this.destRect = new Rectangle(position, size);
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(texture, rect, Color.White);
+            spriteBatch.Draw(texture, destRect, Color.White);
         }
 
     }

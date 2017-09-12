@@ -1,60 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:ns="Microsoft.Xna.Framework">
   <Asset Type="DataLibrary.Map">
-    <MapWidth>4</MapWidth>
-    <MapHeight>4</MapHeight>
-    <TileWidth>32</TileWidth>
-    <TileHeight>32</TileHeight>
-    <TileSetPath>tiles</TileSetPath>
+    <MapColumns>2</MapColumns>
+    <MapRows>2</MapRows>
+    <TileWidth>16</TileWidth>
+    <TileHeight>16</TileHeight>
+    <TilesetPath>tiles</TilesetPath>
+    <TilesetColumns>32</TilesetColumns>
+    <TilesetRows>24</TilesetRows>
     <Tiles>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>2</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>5</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>8</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>6</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>4</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
-      <Tile>
-        <TileIndex>0</TileIndex>
-      </Tile>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>12</TileIndex>
+        <PositionX>0</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>13</TileIndex>
+        <PositionX>1</PositionX>
+        <PositionY>0</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>44</TileIndex>
+        <PositionX>0</PositionX>
+        <PositionY>1</PositionY>
+      </Item>
+      <Item Type="DataLibrary.Tile">
+        <TileIndex>45</TileIndex>
+        <PositionX>1</PositionX>
+        <PositionY>1</PositionY>
+      </Item>
     </Tiles>
   </Asset>
 </XnaContent>
